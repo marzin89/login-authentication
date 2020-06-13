@@ -1,0 +1,24 @@
+#login {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 20px
+}
+#username, #password {
+    font-size: medium;
+    padding: 5px;
+    width: 250px;
+    border-radius: 5px;
+}
+#submit {
+    font-size: medium;
+    padding: 5px;
+    margin-top: 10px;
+}
+#forgot-pwd {
+    float: right;
+    margin-top: -40px;
+}
