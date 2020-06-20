@@ -80,7 +80,10 @@ function sendChangePwdLink() {
 
 }
 
-function changeMsgText() {
+function openNewTab() {
 
+    let win = window.open( "send-pwd-link.html", "_blank" );
 
+    win.focus();
+    
 }
