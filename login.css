@@ -1,4 +1,4 @@
-#login {
+#login, #send-pwd-link {
     position: absolute;
     left: 40%;
     top: 40%;
@@ -7,18 +7,21 @@
     border-width: 1px;
     padding: 20px
 }
-#username, #password {
+#username, #password, #email {
     font-size: medium;
     padding: 5px;
     width: 250px;
     border-radius: 5px;
 }
-#submit {
+#submit, #send-link {
     font-size: medium;
     padding: 5px;
     margin-top: 10px;
 }
-#forgot-pwd {
+a {
     float: right;
     margin-top: -40px;
+}
+#send-link-msg {
+    text-align: justify;
 }

@@ -45,3 +45,42 @@ function checkLogin() {
     }
 
 }
+
+function sendChangePwdLink() {
+
+    const email = document.getElementById('email');
+
+    const submitMessage = ['Thank you! A link has been sent\n' +
+
+    'to your email account. Please\nclick on it to change your ' +
+
+    'pass-\nword. Please note that the link\nis only valid for 24 hours.',
+
+    'We don\'t recognize your email\naddress. The link ' + 
+    
+    'could not be\nsent.', 'The email field is empty. ' + 
+    
+    'Please\nenter your email address.'];
+
+    if ( email.value == 'anders.svensson@gmail.com' ) {
+
+        document.getElementById('send-pwd-msg').innerText = submitMessage[0];
+
+    } else if ( email.value.length > 0 && email.value !== 
+        
+    'anders.svensson@gmail.com' && email.value !== 'Email' ) {
+
+        document.getElementById('send-pwd-msg').innerText = submitMessage[1];
+
+    } else if ( email.value.length == 0 || email.value == 'Email' ) {
+
+        document.getElementById('send-pwd-msg').innerText = submitMessage[2]; 
+
+    }
+
+}
+
+function changeMsgText() {
+
+
+}

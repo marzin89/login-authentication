@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <head>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div id="send-pwd-link">
+            <p id="send-link-msg">Please enter your email address <br>
+            and click 'Send' below. A link <br>will be sent to your inbox to 
+            <br>change your password.</p>
+            <input type="text" value="Email" id="email">
+            <div>
+                <input type="button" id="send-link" value="Send link" 
+                onclick="sendChangePwdLink();">
+            </div>
+            <p id="send-pwd-msg"></p>
+        </div>
+        <script src="login.js"></script>
+    </body>
+</html>
