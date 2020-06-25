@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <head>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div id="change-pwd">
+            <p>Enter your new password and<br>confirm by entering it again.<br> 
+            Your new password must meet<br>the following requirements:
+            </p>
+            <ul>
+                <li id="uppercase" class="invalid">Uppercase letters</li>
+                <li id="lowercase" class="invalid">Lowercase letters</li>
+                <li id="numbers" class="invalid">Numbers</li>
+                <li id="length" class="invalid">At least 12 characters</li>
+            </ul>
+            <p>New password</p>
+            <input type="password" value="" id="new-pwd" 
+            oninput="validateNewPwd();">
+            <p>Confirm password</p>
+            <input type="password" value="" id="confirm-pwd" 
+            oninput="validateNewPwd();">
+            <p id="pwd-match"></p>
+            <div>
+                <input type="button" value="Change password" id="change-pwd-btn"
+                onclick="changePwdMsg();" disabled>
+            </div>
+            <p id="change-pwd-msg"></p>
+        </div>
+        <script src="login.js"></script>
+    </body>
+</html>

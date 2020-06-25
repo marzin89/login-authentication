@@ -1,4 +1,4 @@
-#login, #send-pwd-link {
+#login, #send-pwd-link, #change-pwd {
     position: absolute;
     left: 40%;
     top: 40%;
@@ -7,13 +7,16 @@
     border-width: 1px;
     padding: 20px
 }
-#username, #password, #email {
+#username, #password, #email, #new-pwd, #confirm-pwd {
     font-size: medium;
     padding: 5px;
     width: 250px;
     border-radius: 5px;
 }
-#submit, #send-link {
+.invalid {
+    color: red;
+}
+#submit, #send-link, #change-pwd-btn {
     font-size: medium;
     padding: 5px;
     margin-top: 10px;
