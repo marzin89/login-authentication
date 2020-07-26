@@ -7,7 +7,7 @@
     border-width: 1px;
     padding: 20px
 }
-#username, #password, #email, #new-pwd, #confirm-pwd {
+#username, #password, #email, #old-pwd, #new-pwd, #confirm-pwd {
     font-size: medium;
     padding: 5px;
     width: 250px;

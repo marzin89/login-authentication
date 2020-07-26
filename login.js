@@ -6,19 +6,19 @@ function checkLogin() {
 
     if ( username.value === 'anders.svensson@gmail.com' && password.value ===
         
-    'sg//?Yo71' ) {
+    'sg//?Yo71PCj:' ) {
 
         alert( 'Login successful.' );
 
     } else if ( username.value === 'anders.svensson@gmail.com' && 
     
-    password.value !== 'sg//?Yo71' ) {
+    password.value !== 'sg//?Yo71PCj:' ) {
 
         alert( 'Login failed. Invalid password.' );
     
     } else if ( username.value !== 'anders.svensson@gmail.com' && 
     
-    password.value == 'sg//?Yo71' ) {
+    password.value == 'sg//?Yo71PCj:' ) {
 
         alert( 'Login failed. Invalid username.' );
 
@@ -26,7 +26,7 @@ function checkLogin() {
         
     username.value !== 'anders.svensson@gmail.com' && password.value !== 
     
-    'sg//?Yo71' ) {
+    'sg//?Yo71PCj:' ) {
 
         alert( 'Login failed. Invalid username and password.' );
 
@@ -86,6 +86,8 @@ function openNewTab() {
 const newPwd = document.getElementById('new-pwd');
 
 const confirmPwd = document.getElementById('confirm-pwd');
+
+let oldPwd = 'sg//?Yo71PCj:';
 
 function checkUpperCase() {
 
@@ -155,6 +157,12 @@ function checkLength() {
 
         return false;
     }
+}
+
+function checkOldPwd() {
+
+    
+
 }
 
 function checkIfPasswordsMatch() {

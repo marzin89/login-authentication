@@ -13,8 +13,12 @@
                 <li id="uppercase" class="invalid">Uppercase letters</li>
                 <li id="lowercase" class="invalid">Lowercase letters</li>
                 <li id="numbers" class="invalid">Numbers</li>
+                <li id="different" class="invalid">At least 3 characters<br>
+                    different from the old<br>password</li>
                 <li id="length" class="invalid">At least 12 characters</li>
             </ul>
+            <p>Current password</p>
+            <input type="password" value="" id="old-pwd">
             <p>New password</p>
             <input type="password" value="" id="new-pwd" 
             oninput="validateNewPwd();">
