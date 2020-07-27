@@ -161,8 +161,14 @@ function checkLength() {
 
 function checkOldPwd() {
 
-    
+    if (document.getElementById('old-pwd').value === oldPwd) {
 
+        document.getElementById('old-pwd').style.borderColor = 'green';
+    
+    } else {
+
+        document.getElementById('old-pwd').style.borderColor = 'red';
+    }
 }
 
 function checkIfPasswordsMatch() {
@@ -203,9 +209,11 @@ function validateNewPwd() {
 
     checkIfPasswordsMatch();
 
+    checkOldPwd();
+
     if ( checkUpperCase() && checkLowerCase() && checkNumbers() && 
     
-        checkLength() && checkIfPasswordsMatch() ) {
+        checkLength() && checkIfPasswordsMatch() && checkOldPwd() ) {
 
             button.disabled = false;
 

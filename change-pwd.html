@@ -18,8 +18,8 @@
                 <li id="length" class="invalid">At least 12 characters</li>
             </ul>
             <p>Current password</p>
-            <input type="password" value="" id="old-pwd">
-            <p>New password</p>
+            <input type="password" value="" id="old-pwd" 
+            oninput="validateNewPwd();"><p>New password</p>
             <input type="password" value="" id="new-pwd" 
             oninput="validateNewPwd();">
             <p>Confirm password</p>
